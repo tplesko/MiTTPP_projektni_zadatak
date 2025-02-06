@@ -9,6 +9,7 @@ public class AccountsOverviewPage {
 
     private By accountsOverviewHeader = By.xpath("//*[@id=\"leftPanel\"]/ul/li[2]/a");
     private By logoutLink = By.xpath("//*[@id='leftPanel']/ul/li[8]/a");
+    private By openNewAccountLink = By.xpath("//*[@id=\"leftPanel\"]/ul/li[1]/a");
 
     public AccountsOverviewPage(WebDriver driver) {
         this.driver = driver;
@@ -25,5 +26,8 @@ public class AccountsOverviewPage {
             return false;
         }
     }
-
+    public OpenNewAccountPage openNewAccount() {
+        driver.findElement(openNewAccountLink).click();
+        return new OpenNewAccountPage(driver);
+    }
 }
