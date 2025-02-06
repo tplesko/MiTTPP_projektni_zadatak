@@ -7,7 +7,7 @@ import org.openqa.selenium.NoSuchElementException;
 public class AccountsOverviewPage {
     private WebDriver driver;
 
-    private By accountsOverviewHeader = By.xpath("//h1[contains(text(),'Accounts Overview')]");
+    private By accountsOverviewHeader = By.xpath("//*[@id=\"leftPanel\"]/ul/li[2]/a");
     private By logoutLink = By.xpath("//*[@id='leftPanel']/ul/li[8]/a");
 
     public AccountsOverviewPage(WebDriver driver) {

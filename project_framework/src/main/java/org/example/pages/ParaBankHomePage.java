@@ -7,8 +7,8 @@ import org.openqa.selenium.By;
 public class ParaBankHomePage {
     private WebDriver driver;
 
-    private By usernameField =  By.id("username");
-    private By passwordField =  By.id("password");
+    private By usernameField =  By.name("username");
+    private By passwordField =  By.name("password");
     private By loginButton = By.xpath("//*[@id=\"loginPanel\"]/form/div[3]/input");
     private By registerLink = By.xpath("//*[@id=\"loginPanel\"]/p[2]/a");
 
@@ -23,9 +23,7 @@ public class ParaBankHomePage {
     }
 
     public boolean isLoginFormDisplayed() {
-        return driver.findElement(usernameField).isDisplayed() &&
-                driver.findElement(passwordField).isDisplayed() &&
-                driver.findElement(loginButton).isDisplayed();
+        return driver.findElement(usernameField).isDisplayed() && driver.findElement(passwordField).isDisplayed() && driver.findElement(loginButton).isDisplayed();
     }
 
     public void login(String username, String password) {
