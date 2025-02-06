@@ -23,15 +23,13 @@ Ovaj projekt predstavlja okvir (framework) za automatizirano testiranje programs
 - Git
 
 ### Kloniranje i pokretanje
- Framework je moguće preuzeti tako što se klonira unosom naredbe u Command Prompt/Terminal: *git clone `https://github.com/tplesko/MiTTPP_projektni_zadatak`*.
+ Framework je moguće preuzeti tako što se klonira unosom naredbe u Command Prompt/Terminal: *git clone `https://github.com/tplesko/MiTTPP_projektni_zadatak.git`*.
  Nakon kloniranja, potrebno je ući u projekt i buildati ga naredbom `mvn clean install` (naredba će preuzeti sve potrebne ovisnosti, kompajlirati kod i sl.)
  Na kraju, testovi se mogu pokrenuti naredbom `mvn clean test` ili iz **IntelliJ-a**:
   1. Otvorite projekt u IntelliJ IDEA.
   2. U "Project" prozoru, pronađite mapu src/test/java/tests.
   3. Desnim klikom odaberite "Run All Tests" ili pokrenite pojedinačne test klase.
  
-
-
 
 
 
